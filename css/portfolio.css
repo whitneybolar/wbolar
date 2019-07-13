@@ -1,0 +1,1322 @@
+/* 
+font-face 
+*/
+
+@font-face {
+    font-family: "cinzel-black"; src: url("/fonts/cinzel-black.ttf") format("truetype");
+    font-family: "cinzel-bold"; src: url("/fonts/cinzel-bold.ttf") format("truetype");
+    font-family: "cinzel-regular"; src: url("/fonts/cinzel-regular.ttf") format("truetype");
+    font-family: "cinzel-decorative-bold"; src: url("/fonts/cinzel-decorative-bold.ttf") format("truetype");
+    font-family: "cinzel-decorative-regular"; src: url("/fonts/cinzel-decorative-regular.ttf") format("truetype");
+  }
+  
+  /*
+    DIAGNOSTIC STYLING Body & Header
+  */
+
+  body {
+    background-color: #2F3135; 
+  }
+
+  .whole-header {
+  background-image:url('/img/lights-whole.png');
+  background-position: center;
+  background-color: #515151;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 590px;
+  display: flex;
+  flex-wrap: wrap;
+ }
+   
+   .header-text{
+    color: white; 
+    width: 100%; 
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 10px; 
+    height: 150px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    
+    animation: pulse 5s infinite; 
+   }
+   
+   #header-subtitle{
+    font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase; 
+     text-shadow: 2px 2px 20px black;
+   }
+   
+   #header-title {
+     color: #F1ECD4;   
+     font-size: 56px;
+     text-shadow: 10px 10px 50px black;
+     font-family: "cinzel-decorative-bold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     text-transform: uppercase; 
+   }
+   
+   .nav-and-button {
+     width: 100%;
+     height: 100px; 
+     display: flex;
+     justify-content: flex-end; 
+     align-items: flex-start; 
+   }
+   
+   /*
+    DIAGNOSTIC STYLING overlay-navigation (class)
+   */
+   
+   .overlay-navigation {
+     display: flex; 
+     flex-direction: column;
+     margin: 2em 50px 0px 29px; 
+     width: 100%;
+     text-transform: uppercase; 
+   }
+   
+   .nav-text {
+    font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+     border: solid #F1ECD4 2px; 
+     width: 100px; 
+     height: 15px;
+     padding: 5px; 
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+     margin: 50px 0px 0px 0px; 
+     text-decoration: none;
+     color: #FFD195; 
+   }
+   
+    /*
+    DIAGNOSTIC STYLING open-overlay (div)
+   */
+   
+   .open-overlay { 
+     position: absolute;
+     left: 4rem;
+     top: 2rem;
+     z-index: auto;
+     background-color: #F1ECD4; 
+     border: solid 2px #2F3135; 
+     border-radius: 2px; 
+     padding: 4px; 
+     width: 34px;
+     height: 25px; 
+     display: block;
+     cursor: pointer;
+   }
+   
+   .open-overlay span {
+     display: block;
+     height: 1px;
+     width: 25px; 
+     background-color: #29363B;
+     cursor: pointer;
+     margin: 8px;
+     margin-left: 4px; 
+   }
+  
+   /* First Frame all bars */ 
+   .bar-top {
+    position: absolute;
+    top: 0px; 
+  }
+  
+  .bar-middle {
+    position: absolute;
+    top: 7.5px;
+  }
+  
+  .bar-bottom {
+    position: absolute;
+    top: 15px;
+  }
+  
+   
+    /* 
+   header & body media query for 650px and under
+   */   
+     
+    @media screen and (max-width: 650px) { 
+      
+   .open-overlay { 
+     position: absolute;
+     left: 3rem;
+     top: 2rem;
+    
+     width: 34px;
+     height: 25px; 
+     display: block;
+     cursor: pointer;
+   }
+     
+    .nav-text {
+     font-size: 13px; 
+     width: 70px; 
+   }
+     
+    .whole-header { 
+       height: 315px; 
+     }
+     
+    .header-text { 
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+     text-align: center; 
+     margin-top: -60px; 
+     margin-left: 140px; 
+     width: 60%;
+   }
+   
+   #header-subtitle  {
+     font-size: 12px; 
+   }
+   
+   #header-title {
+     color: #F1ECD4;   
+     font-size: 28px;
+   }   
+}
+   
+   /*
+   DIAGNOSTIC STYLING Section: Portfolio Nav
+ */
+ 
+ .portfolio-nav {
+   display: grid; 
+   grid-template-columns: repeat(300, 1fr);
+   grid-template-rows: repeat(70, 1fr); 
+   height: 120px; 
+ }
+
+ #vertical-bar-1 {
+  background-color: #FFD195;
+  grid-column-start: 75;
+  grid-column-end: 75;
+  grid-row-start: 1;
+  grid-row-end: 70; 
+}
+ 
+ #vertical-bar-2 {
+   background-color: #FFD195;
+   grid-column-start: 150;
+   grid-column-end: 150;
+   grid-row-start: 1;
+   grid-row-end: 70; 
+ }
+ 
+ #vertical-bar-3 {
+   background-color: #FFD195;
+   grid-column-start: 225;
+   grid-column-end: 225;
+   grid-row-start: 1;
+   grid-row-end: 70; 
+ }
+ 
+ #horizontal-bar {
+   background-color: #FFD195;
+   grid-column-start: 1;
+   grid-column-end: 301;
+   grid-row-start: 68;
+   grid-row-end: 70; 
+ }
+   
+ .nav-names {
+  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+   text-transform: uppercase;
+   font-weight: bold;
+   text-decoration: none;
+ }
+ 
+ .nav-names:hover{
+   color: #FFD195;
+ }
+ 
+ #all-subjects-link {
+  font-size: 12px; 
+  color: #F1ECD4;
+  grid-column-start: 31;
+  grid-column-end: 40;
+  grid-row-start: 36;
+  grid-row-end: 35; 
+ }
+
+
+ #digital-design{
+   font-size: 12px; 
+   color: #F1ECD4;
+   grid-column-start: 104;
+   grid-column-end: 121;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
+ 
+ #writing-samples {
+   font-size: 12px; 
+   color: #F1ECD4;
+   grid-column-start: 176;
+   grid-column-end: 196;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
+ #photography{
+   font-size: 12px; 
+   color: #F1ECD4;
+   grid-column-start: 254;
+   grid-column-end: 273;
+   grid-row-start: 36;
+   grid-row-end: 35; 
+ }
+ 
+  /* 
+ portfolio-nav (section) media query 650 max 
+ */ 
+ 
+ @media screen and (max-width: 650px) { 
+   
+ .portfolio-nav {
+   height: 80px; 
+ }
+ 
+ #all-subjects-link {
+  grid-column-start: 30;
+  grid-column-end: 40;
+  grid-row-start: 35;
+  grid-row-end: 35; 
+ }
+
+ #digital-design{
+   font-size: 8px; 
+   color: #F1ECD4;
+   grid-column-start: 97;
+   grid-column-end: 130;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
+ 
+ #writing-samples {
+   font-size: 8px; 
+   color: #F1ECD4;
+   grid-column-start: 170;
+   grid-column-end: 210;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
+ #photography{
+   font-size: 8px; 
+   color: #F1ECD4;
+   grid-column-start: 260;
+   grid-column-end: 260;
+   grid-row-start: 35; 
+ }
+ }
+ 
+ @media screen and (max-width: 400px) { 
+ #photography{
+  grid-column-start: 250;
+  grid-column-end: 290;
+  grid-row-start: 35;
+  grid-row-end: 35; 
+ }
+ }
+ 
+ #gallery-title {
+  display: flex; 
+  flex-wrap: wrap; 
+  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  text-transform: uppercase;
+   color: #F1ECD4;
+   font-size: 20px;  
+   margin-left: 50px;  
+ }
+  
+#lightgallery {
+  list-style-type: none; 
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  margin: 0px 50px 0px 50px; 
+ } 
+ 
+ .gallery-images-photography {
+  border-radius: 5px; 
+  display: flex;
+  justify-content: center; 
+  border: solid #FFD195 2px;
+  margin: 5px; 
+  height: 200px;
+  width: 200px; 
+ }
+
+ .gallery-images-s-w {
+  border-radius: 5px; 
+   display: flex;
+   justify-content: center; 
+   border: solid #FFD195 2px;
+   margin: 5px; 
+   height: 200px;
+   width: 200px; 
+ }
+
+ .gallery-images-d-d {
+  border-radius: 5px; 
+  display: flex;
+  justify-content: center; 
+  border: solid #FFD195 2px;
+  margin: 5px; 
+  height: 200px;
+  width: 200px;
+ }
+
+ .gallery-subject {
+   text-align: center;
+   text-decoration: none; 
+   color: #F1ECD4;
+   font-size: 15px; 
+ }
+ 
+ .gallery-subject {
+  font-family: "cinzel-bold", Arial, Helvetica, sans-serif; 
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   padding: 30px; 
+ }
+
+/* digital design images */
+
+#image-1-d-d { 
+   margin: 5px; 
+   background-image:url('/img/space-guy.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#image-2-d-d {
+   margin: 5px; 
+   background-image:url('/img/jelly-fish-finish.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#image-3-d-d {
+  margin: 5px; 
+  background-image:url('/img/sl-logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#image-4-d-d {
+  margin: 5px; 
+  background-image:url('/img/tcom-305-poster.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+/* photography images */ 
+
+#image-1-photography {
+  margin: 5px; 
+  background-image:url('/img/daisy.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#image-2-photography {
+  margin: 5px; 
+  background-image:url('/img/rotc.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#image-3-photography {
+  margin: 5px; 
+  background-image:url('/img/warm-weather.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#image-4-photography {
+  margin: 5px; 
+  background-image:url('/img/tennis-net.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+ 
+/* gallery filter */ 
+
+.hide {
+  opacity: 0;
+  transition: opacity .25s;
+  position: absolute;
+}
+
+/* 
+gallery media query for 650px and under
+   */   
+     
+   @media screen and (max-width: 650px) { 
+
+    #gallery-title {
+       font-size: 12px;  
+       margin-left: 10px;  
+     }
+      
+     .whole-gallery { 
+      margin: 0px 10px 0px 10px; 
+     } 
+     
+     .gallery-images-photography {
+      display: flex;
+      justify-content: center; 
+      border: solid #FFD195 2px;
+      margin: 5px; 
+      height: 100px;
+      width: 100px; 
+     }
+    
+     .gallery-images-s-w {
+       margin: 5px; 
+       height: 100px;
+       width: 100px; 
+     }
+    
+     .gallery-images-d-d {
+      margin: 5px; 
+      height: 100px;
+      width: 100px; 
+     }
+    
+     .gallery-subject {
+       font-size: 10px; 
+     }
+     
+     .gallery-subject {
+       padding: 20px; 
+     }
+   }
+
+/* about me section */ 
+
+.about-me {
+  height: 40em; 
+  display: flex; 
+  background: #2F3135;
+  justify-content: center; 
+  align-items: center;
+  margin-top: -6em;
+  margin-left: 50px;   
+}
+
+#about-me-title {
+  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  text-transform: uppercase;
+  margin-left: 60px; 
+  color: #F1ECD4;
+  margin-top: 30px; 
+  font-size: 20px; 
+}
+
+.whole-certification-list {
+  text-transform: uppercase; 
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  color: #F1ECD4;
+  font-size: 30px; 
+  height: 350px;   
+  margin-top: -90px; 
+}
+
+.about-me-bars-left{
+  background-color: #FFD195; 
+  height: 10px; 
+  width: 430px;  
+
+}
+
+#minor-indication {
+   font-size: 15px; 
+  margin-bottom: -100px;
+  margin-top: -7px; 
+}
+
+#major {
+  font-size: 25px; 
+}
+
+#certificate {
+  margin-bottom: -7px; 
+}
+
+#certificate-indication {
+  font-size: 15px; 
+  margin-bottom: -100px;
+}
+
+#about-be-svg {
+  color: #FFD195; 
+  display: flex;
+  margin-left: 2em; 
+  height: 450px; 
+}
+
+.about-me-right-titles {
+  text-align: center;
+  text-transform: uppercase; 
+}
+
+#about-me-main-title {
+  font-size: 30px; 
+  color: #FFD195;
+}
+
+#about-me-subtitle {
+  font-size: 16px; 
+  margin-top: -20px; 
+  color: white;
+}
+
+.about-me-bars-right {
+  background-color: #FFD195; 
+  height: 10px; 
+  width: 400px;  
+  margin-top: 20px; 
+  margin-bottom: -20px; 
+}
+
+.whole-about-me-description { 
+  height: 450px; 
+  width: 400px; 
+  color: #F1ECD4;
+  margin: 50px;  
+  display: flex;
+  flex-direction: column; 
+}
+
+#about-me-description-p {
+  font-size: 14px; 
+  padding: 0px 30px 0px 30px; 
+  color: white;
+}
+
+ /* 
+about me media query between 1500 & 800
+   */   
+     
+   @media only screen and (max-width: 1500px) and (min-width: 800px) {
+
+
+    .about-me {
+      display: flex;
+      flex-direction: column; 
+      margin-top: 3em;
+    }
+    
+    #about-me-title {
+      margin-left: 60px; 
+      margin-top: 30px; 
+      font-size: 20px; 
+    }
+    
+    .whole-certification-list { 
+      display: flex;
+      flex-direction: column; 
+      text-align: center;
+      font-size: 12px; 
+      height: 150px;   
+      margin-top: -20px; 
+    }
+    
+    .about-me-bars-left{
+      background-color: #FFD195; 
+      height: 5px; 
+      width: 775px;  
+    
+    }
+    
+    #minor-indication {
+      font-size: 10px; 
+      margin-bottom: -40px;
+      margin-top: -7px; 
+    }
+
+    #minor {
+      font-size: 15px; 
+    }
+    
+    #major {
+      font-size: 20px; 
+    }
+    
+    #certificate {
+      margin-bottom: -7px;
+      font-size: 15px;  
+    }
+    
+    #certificate-indication {
+      font-size: 10px; 
+      margin-bottom: -35px;
+    }
+    
+    #about-be-svg {
+      color: #FFD195; 
+      display: flex;
+      margin-left: 0em;
+      margin-top: 12em;  
+      height: 400px ; 
+      width: 400px; 
+    }
+    
+    #about-me-main-title {
+      font-size: 20px; 
+      margin-top: 20px;
+    }
+    
+    #about-me-subtitle {
+      font-size: 12px; 
+      margin-top: -20px; 
+    }
+    
+    .about-me-bars-right {
+      display: none;
+    }
+    
+    .whole-about-me-description { 
+      height: 200px; 
+      width: 475px; 
+      color: #F1ECD4;
+      margin-top: -1em;   
+      padding-top: 0px;   
+      display: flex;
+      flex-direction: column; 
+    }
+    
+    #about-me-description-p {
+      font-size: 14px; 
+      padding: 0px 0px 0px 0px; 
+    }    
+   }
+
+ /* 
+about me media query between 800 & 650
+   */   
+     
+   @media only screen and (max-width: 800px) and (min-width: 650px) {
+
+    .about-me {
+      display: flex; 
+      flex-direction: column; 
+      background: #2F3135;
+      justify-content: center; 
+      align-items: center;
+      margin-top: 0em;
+      margin-left: 0px; 
+
+    }
+    
+    .whole-certification-list { 
+      display: flex;
+      flex-direction: column; 
+      text-align: center;
+      font-size: 12px; 
+      height: 150px;   
+      margin-top: -20px; 
+    }
+    
+    .about-me-bars-left{
+      background-color: #FFD195; 
+      height: 5px; 
+      width: 500px;  
+    
+    }
+    
+    #minor-indication {
+      font-size: 10px; 
+      margin-bottom: -40px;
+      margin-top: -7px; 
+    }
+    
+    #major {
+      font-size: 15px; 
+    }
+    
+    #certificate {
+      margin-bottom: -7px; 
+    }
+    
+    #certificate-indication {
+      font-size: 10px; 
+      margin-bottom: -35px;
+    }
+    
+    #about-be-svg {
+      color: #FFD195; 
+      display: flex;
+      margin-left: 0em;
+      margin-top: 5.5em; 
+      height: 300px ; 
+      width: 300px; 
+    }
+    
+    #about-me-main-title {
+      font-size: 15px; 
+    }
+    
+    #about-me-subtitle {
+      font-size: 10px; 
+      margin-top: -20px; 
+    }
+    
+    .about-me-bars-right {
+      display: none;
+    }
+    
+    .whole-about-me-description { 
+      height: 150px; 
+      width: 475px; 
+      color: #F1ECD4;
+      margin-top: -1em;   
+      display: flex;
+      flex-direction: column; 
+    }
+    
+    #about-me-description-p {
+      font-size: 10px; 
+      padding: 0px 0px 0px 0px; 
+    }    
+   }
+
+   /* 
+about me media query for 650px and under
+   */   
+     
+   @media screen and (max-width: 650px) { 
+
+    .about-me {
+      display: flex; 
+      flex-direction: column; 
+      background: #2F3135;
+      justify-content: center; 
+      align-items: center;
+      margin-top: 0em;
+      margin-left: 0px; 
+
+    }
+    
+    #about-me-title {
+      margin-left: 12px; 
+      margin-top: 15px; 
+      font-size: 12px; 
+    }
+    
+    .whole-certification-list { 
+      display: flex;
+      flex-direction: column; 
+      text-align: center;
+      font-size: 10px; 
+      height: 150px;   
+      margin-top: -90px; 
+    }
+    
+    .about-me-bars-left{
+      background-color: #FFD195; 
+      height: 5px; 
+      width: 300px;  
+    
+    }
+    
+    #minor-indication {
+      font-size: 10px; 
+      margin-bottom: -40px;
+      margin-top: -7px; 
+    }
+    
+    #major {
+      font-size: 15px; 
+    }
+    
+    #certificate {
+      margin-bottom: -7px; 
+    }
+    
+    #certificate-indication {
+      font-size: 10px; 
+      margin-bottom: -35px;
+    }
+    
+    #about-be-svg {
+      color: #FFD195; 
+      display: flex;
+      margin-left: 0em;
+      margin-top: 4em;  
+      height: 200px ; 
+      width: 200px; 
+    }
+    
+    #about-me-main-title {
+      font-size: 15px; 
+    }
+    
+    #about-me-subtitle {
+      font-size: 10px; 
+      margin-top: -20px; 
+    }
+    
+    .about-me-bars-right {
+      display: none;
+    }
+    
+    .whole-about-me-description { 
+      height: 150px; 
+      width: 300px; 
+      color: #F1ECD4;
+      margin: 0px; 
+      padding-top: 10px;   
+      display: flex;
+      flex-direction: column; 
+    }
+    
+    #about-me-description-p {
+      font-size: 10px; 
+      padding: 0px 0px 0px 0px; 
+    }    
+   }
+
+/* contact me section */
+
+.whole-contact-form {
+  margin-top: 110px; 
+  display: flex;
+  justify-content: center; 
+}
+
+#my-face {
+  height: 325px; 
+  width: 325px; 
+  border-radius: 20px; 
+  margin-right: 50px; 
+}
+
+form {
+  display: flex; 
+  align-items: center; 
+  flex-direction: column;
+  margin-top: -30px; 
+}
+
+.contact-title {
+  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  margin-left: -10px;
+  text-transform: uppercase;
+  color: #F1ECD4;
+  margin-bottom: 0px; 
+}
+
+.name-package {
+  display: flex;
+  flex-direction: column;  
+  margin: 10px; 
+}
+
+.email-package {
+  display: flex;
+  flex-direction: column;  
+  margin: 10px; 
+}
+
+.comments-package {
+  display: flex;
+  flex-direction: column;  
+  margin: 10px; 
+}
+
+.submit-package {
+  margin: 20px; 
+}
+
+label {
+  text-transform: uppercase; 
+  color: white; 
+  font-size: 12px; 
+}
+
+.three-inputs {
+  border: #F1ECD4 solid 2px; 
+  background-color: #F1ECD4;
+  border-radius: 5px; 
+  width: 300px;
+}
+
+#input-1 {
+  height: 15px; 
+}
+
+#input-2 {
+  height: 15px; 
+}
+
+#comment-input {
+  height: 100px; 
+}
+
+#send-button {
+  border-radius: 5px; 
+  color: #2F3135;
+  text-transform: uppercase; 
+  background-color: white;
+  width: 100px; 
+  height: 30px; 
+}
+
+value {
+  position: absolute;
+  top: -50px;
+}
+
+/* 
+contact me media query between min 1500
+   */   
+     
+   @media only screen and (min-width: 1500px) {
+    .whole-contact-form {
+      margin-top: 30px; 
+      display: flex;
+      justify-content: center; 
+    }
+    
+    #my-face {
+      height: 580px; 
+      width: 650px; 
+      border-radius: 20px; 
+      margin-right: 50px; 
+    }
+    
+    form {
+      display: flex; 
+      align-items: center; 
+      flex-direction: column;
+      margin-top: -30px; 
+    }
+    
+    .contact-title {
+      font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+      margin-left: -10px;
+      text-transform: uppercase;
+      color: #F1ECD4;
+      margin-bottom: 0px; 
+      font-size: 25px; 
+    }
+    
+    .name-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .email-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .comments-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .submit-package {
+      margin: 20px; 
+    }
+    
+    label {
+      text-transform: uppercase; 
+      color: white; 
+      font-size: 16px; 
+    }
+    
+    .three-inputs {
+      border: #F1ECD4 solid 2px; 
+      background-color: #F1ECD4;
+      border-radius: 5px; 
+      width: 600px;
+    }
+    
+    #input-1 {
+      height: 35px; 
+    }
+    
+    #input-2 {
+      height: 35px; 
+    }
+    
+    #comment-input {
+      height: 250px; 
+    }
+    
+    #send-button {
+      border-radius: 5px; 
+      color: #2F3135;
+      text-transform: uppercase; 
+      background-color: white;
+      width: 150px; 
+      height: 50px; 
+    }
+   }
+
+/* 
+contact me media query between 800 & 500
+   */   
+     
+   @media only screen and (max-width: 800px) and (min-width: 650px) {
+
+    .whole-contact-form {
+      margin-top: 50px; 
+      display: flex;
+      justify-content: center; 
+    }
+    
+    #my-face {
+      height: 260px; 
+      width: 260px; 
+      border-radius: 20px; 
+      margin-right: 10px; 
+    }
+    
+    form {
+      display: flex; 
+      align-items: center; 
+      flex-direction: column;
+      margin-top: -30px; 
+    }
+    
+    .contact-title {
+      font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+      margin-left: -10px;
+      text-transform: uppercase;
+      color: #F1ECD4;
+      margin-bottom: 0px; 
+      font-size: 14px; 
+    }
+    
+    .name-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .email-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .comments-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .submit-package {
+      margin: 20px; 
+    }
+    
+    label {
+      text-transform: uppercase; 
+      color: white; 
+      font-size: 12px; 
+    }
+    
+    .three-inputs {
+      border: #F1ECD4 solid 2px; 
+      background-color: #F1ECD4;
+      border-radius: 5px; 
+      width: 300px;
+    }
+    
+    #input-1 {
+      height: 15px; 
+    }
+    
+    #input-2 {
+      height: 15px; 
+    }
+    
+    #comment-input {
+      height: 50px; 
+    }
+    
+    #send-button {
+      border-radius: 5px; 
+      color: #2F3135;
+      text-transform: uppercase; 
+      background-color: white;
+      width: 100px; 
+      height: 30px; 
+    }
+    
+    value {
+      position: absolute;
+      top: -50px;
+    }
+   }
+
+  /* 
+contact me media query for 650px and under
+   */   
+     
+   @media screen and (max-width: 650px) { 
+
+    .whole-contact-form {
+      margin-top: 0px; 
+      display: flex;
+      justify-content: center; 
+    }
+    
+    #my-face {
+     display: none; 
+    }
+    
+    form {
+      display: flex; 
+      align-items: center; 
+      flex-direction: column;
+      margin-top: -30px; 
+    }
+    
+    .contact-title {
+      font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+      margin-left: -10px;
+      text-transform: uppercase;
+      color: #F1ECD4;
+      margin-bottom: 0px; 
+      font-size: 14px; 
+    }
+    
+    .name-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .email-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .comments-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .submit-package {
+      margin: 20px; 
+    }
+    
+    label {
+      text-transform: uppercase; 
+      color: white; 
+      font-size: 12px; 
+    }
+    
+    .three-inputs {
+      border: #F1ECD4 solid 2px; 
+      background-color: #F1ECD4;
+      border-radius: 5px; 
+      width: 250px;
+    }
+    
+    #comment-input {
+      height: 50px; 
+    }
+    
+    #send-button {
+      border-radius: 5px; 
+      color: #2F3135;
+      text-transform: uppercase; 
+      background-color: white;
+      width: 60px; 
+      height: 30px; 
+    }
+    
+   }
+
+/* Footer */
+
+.footer {
+  margin-top: 50px; 
+  display: grid; 
+  grid-template-columns: repeat(300, 1fr);
+  grid-template-rows: repeat(70, 1fr); 
+  height: 120px; 
+}
+
+#footer-bar {
+  background-color: #FFD195;
+  grid-column-start: 1;
+  grid-column-end: 300;
+  grid-row-start: 2;
+  grid-row-end: 5; 
+}
+
+#copyright{
+  color: #F1ECD4;
+  grid-column-start: 125;
+  grid-column-end: 185;
+  grid-row-start: 35;
+  grid-row-end: 35; 
+}
+
+/* 
+footer media query between 800 & 500
+   */   
+     
+   @media only screen and (max-width: 800px) and (min-width: 500px) {
+
+    #copyright{
+      font-size: 12px; 
+      grid-column-start: 125;
+      grid-column-end: 195;
+      grid-row-start: 35;
+      grid-row-end: 35; 
+    }
+   }
+
+ /* 
+ footer media query for 500px and under
+   */   
+     
+   @media screen and (max-width: 500px) { 
+
+    #copyright{
+      font-size: 10px; 
+      grid-column-start: 120;
+      grid-column-end: 205;
+      grid-row-start: 35;
+      grid-row-end: 35; 
+    }
+
+   }
+
