@@ -8,6 +8,9 @@ font-face
     font-family: "cinzel-regular"; src: url("/fonts/cinzel-regular.ttf") format("truetype");
     font-family: "cinzel-decorative-bold"; src: url("/fonts/cinzel-decorative-bold.ttf") format("truetype");
     font-family: "cinzel-decorative-regular"; src: url("/fonts/cinzel-decorative-regular.ttf") format("truetype");
+    font-family: "comfortaa-regular"; src: url("/fonts/comfortaa-regular.ttf") format("truetype");
+    font-family: "comfortaa-bold"; src: url("/fonts/comfortaa-bold.ttf") format("truetype");
+    font-family: "comfortaa-light"; src: url("/fonts/comfortaa-light.ttf") format("truetype");
   }
   
   /*
@@ -15,25 +18,22 @@ font-face
   */
 
   body {
-    background-color: rgb(255, 255, 255); 
+    height: 500vh;
   }
 
   .whole-header {
-  background-image:url('/img/businesscard-back-gold-white.jpg');
+  background-image:url('/img/corner-lines-lines 2.png');
   background-position: center;
-  background-color: #515151;
-  background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover; 
-  height: 590px;
+  height: 150vh;
   display: flex;
   flex-wrap: wrap;
  }
    
    .header-text{
-    color: white; 
+    color: black; 
     width: 100%; 
-    background-color: rgba(0,0,0, 0.4);
     border-radius: 10px; 
     height: 150px; 
     display: flex; 
@@ -45,16 +45,14 @@ font-face
    }
    
    #header-subtitle{
-    font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "comfortaa-regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: uppercase; 
-     text-shadow: 2px 2px 20px black;
    }
    
    #header-title {
-     color: #F1ECD4;   
+     color: black;   
      font-size: 56px;
-     text-shadow: 10px 10px 50px black;
-     font-family: "cinzel-decorative-bold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-family: "comfortaa-bold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      text-transform: uppercase; 
    }
    
@@ -73,6 +71,7 @@ font-face
    .overlay-navigation {
      display: flex; 
      flex-direction: column;
+     align-items: flex-end;
      margin: 2em 50px 0px 29px; 
      width: 100%;
      text-transform: uppercase; 
@@ -80,7 +79,7 @@ font-face
    
    .nav-text {
     font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-     border: solid #F1ECD4 2px; 
+     border: solid black 2px; 
      width: 100px; 
      height: 15px;
      padding: 5px; 
@@ -89,7 +88,7 @@ font-face
      justify-content: center;
      margin: 50px 0px 0px 0px; 
      text-decoration: none;
-     color: #FFD195; 
+     color: black; 
    }
    
     /*
@@ -98,10 +97,10 @@ font-face
    
    .open-overlay { 
      position: absolute;
-     left: 4rem;
+     right: 5rem;
      top: 2rem;
      z-index: auto;
-     background-color: #F1ECD4; 
+     background-color: white; 
      border: solid 2px #2F3135; 
      border-radius: 2px; 
      padding: 4px; 
