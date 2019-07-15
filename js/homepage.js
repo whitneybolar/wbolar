@@ -11,20 +11,21 @@ $(document).ready(function(){
     $(".bar-top").animate({top: "0px"});
   });
   $(".open-overlay").click(function(){
-  $(".bar-bottom").animate({top: "0px"});
+    $(".bar-bottom").animate({top: "0px"});
   });
   $(".open-overlay").click(function(){
     $(".bar-bottom").animate({top: "15px"});
   });
 });
 
+$(document).ready(function(){
+    
+  $(".overlay-navigation").hide();
 
-$('.open-overlay').click(function(){
- $("#nav_item_1").slideToggle({top: '13px'});
- $("#nav_item_2").slideToggle({top: '13px'});
- $("#nav_item_3").slideToggle({top: '13px'});
- }); 
-
+  $(".open-overlay").click(function(){
+      $(".overlay-navigation").slideToggle();
+  });
+});
 
  // gallery filter 
 
@@ -80,6 +81,7 @@ $('#all-subjects-link').click( function() {
   checkClass();
   
 });
+
 
 // about me svg 
 

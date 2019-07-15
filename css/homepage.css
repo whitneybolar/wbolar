@@ -18,6 +18,7 @@ font-face
 
   * {
     outline: dotted red 1px;
+    max-height: 60em;
    }
   
   /*
@@ -30,9 +31,13 @@ font-face
 
   .whole-header {
   background-image:url('/img/corner-lines-lines 2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 140vh;
   display: flex;
   flex-wrap: wrap;
+
+  animation: draw 5s infinite; 
  }
    
    .header-text{
@@ -46,7 +51,6 @@ font-face
     margin-right: 100px; 
     margin-bottom: 100px; 
     
-    /* animation: pulse 5s infinite; */ 
    }
    
    #header-subtitle{
@@ -86,6 +90,7 @@ font-face
    }
    
    .nav-text {
+    display: none;
     font-family: 'muli-regular', sans-serif;
     border: solid black 2px; 
      width: 100px; 
@@ -202,7 +207,9 @@ font-face
     flex-direction: row; 
     justify-content: flex-end;
     align-items: flex-start;
-    margin-top: -17.5em; 
+    margin-top: -20.2em; 
+
+    animation: slideInRight 2s;
 }
 
   .circles {
@@ -213,6 +220,35 @@ font-face
     padding: 20px;
 
   }
+
+.subject-text{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
+}
+
+a:hover {
+ color: #D8D1C7;
+}
+
+#designs-title{
+  position: relative;
+  left: 5.3em;
+  top: 9.5em;
+}
+
+#documents-title{
+  position: relative;
+  left: 4.3em;
+  top: 9.5em;
+}
+
+#photography-title{
+  position: relative;
+  left: 3.5em;
+  top: 9.5em;
+}
 
    /*
    DIAGNOSTIC STYLING Section: Social Media Nav
@@ -225,7 +261,7 @@ font-face
   flex-direction: row; 
   justify-content: flex-end;
   align-items: flex-start;
-  margin-top: -15em; 
+  margin-top: -13em; 
 }
 
 .social-media-options {
