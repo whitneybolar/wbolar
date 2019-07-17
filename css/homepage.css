@@ -224,7 +224,7 @@ a:hover {
 }
 
  /* 
-   header & body media query between 1000px 
+   header & body media query between 1000px and 800px
    */ 
 
 
@@ -331,7 +331,7 @@ a:hover {
 }
 
 /* 
-   header & body media query between 1000px 
+   header & body media query between 800px and 650px 
    */ 
 
 
@@ -343,7 +343,7 @@ a:hover {
     
        .open-overlay { 
       position: absolute;
-      right: 4.2rem;
+      right: 3rem;
       top: 2rem;
       width: 34px;
       height: 25px; 
@@ -352,6 +352,124 @@ a:hover {
      .nav-text {
       font-size: 13px; 
       width: 70px; 
+    }
+      
+     .whole-header { 
+        height: 60em;
+        background-image:url('/img/corner-lines-whole.png');
+        background-size: cover;
+      }
+    
+    #header-subtitle  {
+      font-size: 18px; 
+      position: relative;
+      top: 30px; 
+      left: 50px;
+    }
+    
+    #header-title {   
+      font-size: 24px;
+      position: relative;
+      top: 10px; 
+      right: 20px;
+    }   
+  
+    .subject-select {
+     width: 100%;
+     margin-right: 30px; 
+     display: flex;
+     flex-direction: row; 
+     justify-content: flex-end;
+     align-items: flex-start;
+     margin-top: -20.2em; 
+  
+     animation: slideInRight 2s;
+  }
+  
+   .circles {
+     height: 120px; 
+     width: 120px; 
+     margin-top: 10px;
+   }
+  
+  .subject-text{
+   text-transform: uppercase;
+   text-decoration: none;
+   color: black;
+   font-size: 12px;
+  
+  }
+  
+  #designs-title{
+   position: relative;
+   left: 4.5em;
+   top: 8.3em;
+  }
+  
+  #documents-title{
+   position: relative;
+   left: 3.5em;
+   top: 8.3em;
+  }
+  
+  #photography-title{
+   position: relative;
+   left: 2.8em;
+   top: 8.3em;
+  }
+  
+  .social-media {
+   width: 100%;
+   margin-right: 2.5em; 
+   display: flex;
+   flex-direction: row; 
+   justify-content: flex-end;
+   align-items: flex-start;
+   margin-top: -16.5em; 
+  }
+  }
+
+  /* 
+   header & body media query under 650px 
+   */ 
+
+
+   @media screen and (max-width: 650px) { 
+      
+    * {
+      max-height: 50em; 
+    }
+    
+       .open-overlay { 
+      position: absolute;
+      right: 1.2rem;
+      top: 2rem;
+      width: 20px;
+      height: 20px; 
+    }
+
+    .open-overlay span {
+      display: block;
+      height: 1px;
+      width: 15px; 
+      background-color: #29363B;
+      cursor: pointer;
+      margin-top: 5px;
+      margin-left: 2px; 
+    }
+
+    .overlay-navigation {
+      display: flex; 
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 2em 20px 0px 29px; 
+      width: 100%;
+      text-transform: uppercase; 
+    }
+      
+     .nav-text {
+      font-size: 10px; 
+      width: 50px; 
     }
       
      .whole-header { 
