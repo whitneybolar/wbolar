@@ -36,8 +36,6 @@ font-face
   height: 140vh;
   display: flex;
   flex-wrap: wrap;
-
-  animation: draw 5s infinite; 
  }
    
    .header-text{
@@ -148,54 +146,7 @@ font-face
     position: absolute;
     top: 15px;
   }
-  
-   
-    /* 
-   header & body media query for 650px and under
-   */   
-     
-    @media screen and (max-width: 650px) { 
-      
-   .open-overlay { 
-     position: absolute;
-     left: 3rem;
-     top: 2rem;
     
-     width: 34px;
-     height: 25px; 
-     display: block;
-     cursor: pointer;
-   }
-     
-    .nav-text {
-     font-size: 13px; 
-     width: 70px; 
-   }
-     
-    .whole-header { 
-       height: 315px; 
-     }
-     
-    .header-text { 
-     display: flex; 
-     align-items: center;
-     justify-content: center;
-     text-align: center; 
-     margin-top: -60px; 
-     margin-left: 140px; 
-     width: 60%;
-   }
-   
-   #header-subtitle  {
-     font-size: 12px; 
-   }
-   
-   #header-title {
-     color: #F1ECD4;   
-     font-size: 28px;
-   }   
-}
-   
    /*
    DIAGNOSTIC STYLING Section: Subject Nav
  */
@@ -218,7 +169,6 @@ font-face
     height: 200px; 
     width: 200px; 
     padding: 20px;
-
   }
 
 .subject-text{
@@ -272,282 +222,211 @@ a:hover {
   padding: 20px;
 
 }
-   
-   /*
-   DIAGNOSTIC STYLING Section: Portfolio Nav
- */
- 
- .portfolio-nav {
-   display: grid; 
-   grid-template-columns: repeat(300, 1fr);
-   grid-template-rows: repeat(70, 1fr); 
-   height: 120px; 
- }
 
- #vertical-bar-1 {
-  background-color: #FFD195;
-  grid-column-start: 75;
-  grid-column-end: 75;
-  grid-row-start: 1;
-  grid-row-end: 70; 
-}
- 
- #vertical-bar-2 {
-   background-color: #FFD195;
-   grid-column-start: 150;
-   grid-column-end: 150;
-   grid-row-start: 1;
-   grid-row-end: 70; 
- }
- 
- #vertical-bar-3 {
-   background-color: #FFD195;
-   grid-column-start: 225;
-   grid-column-end: 225;
-   grid-row-start: 1;
-   grid-row-end: 70; 
- }
- 
- #horizontal-bar {
-   background-color: #FFD195;
-   grid-column-start: 1;
-   grid-column-end: 301;
-   grid-row-start: 68;
-   grid-row-end: 70; 
- }
-   
- .nav-names {
-  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-   text-transform: uppercase;
-   font-weight: bold;
-   text-decoration: none;
- }
- 
- .nav-names:hover{
-   color: #FFD195;
- }
- 
- #all-subjects-link {
-  font-size: 12px; 
-  color: #F1ECD4;
-  grid-column-start: 31;
-  grid-column-end: 40;
-  grid-row-start: 36;
-  grid-row-end: 35; 
- }
+ /* 
+   header & body media query between 1000px 
+   */ 
 
 
- #digital-design{
-   font-size: 12px; 
-   color: #F1ECD4;
-   grid-column-start: 104;
-   grid-column-end: 121;
-   grid-row-start: 35;
-   grid-row-end: 35; 
- }
- 
- 
- #writing-samples {
-   font-size: 12px; 
-   color: #F1ECD4;
-   grid-column-start: 176;
-   grid-column-end: 196;
-   grid-row-start: 35;
-   grid-row-end: 35; 
- }
- 
- #photography{
-   font-size: 12px; 
-   color: #F1ECD4;
-   grid-column-start: 254;
-   grid-column-end: 273;
-   grid-row-start: 36;
-   grid-row-end: 35; 
- }
- 
-  /* 
- portfolio-nav (section) media query 650 max 
- */ 
- 
- @media screen and (max-width: 650px) { 
-   
- .portfolio-nav {
-   height: 80px; 
- }
- 
- #all-subjects-link {
-  grid-column-start: 30;
-  grid-column-end: 40;
-  grid-row-start: 35;
-  grid-row-end: 35; 
- }
-
- #digital-design{
-   font-size: 8px; 
-   color: #F1ECD4;
-   grid-column-start: 97;
-   grid-column-end: 130;
-   grid-row-start: 35;
-   grid-row-end: 35; 
- }
- 
- 
- #writing-samples {
-   font-size: 8px; 
-   color: #F1ECD4;
-   grid-column-start: 170;
-   grid-column-end: 210;
-   grid-row-start: 35;
-   grid-row-end: 35; 
- }
- 
- #photography{
-   font-size: 8px; 
-   color: #F1ECD4;
-   grid-column-start: 260;
-   grid-column-end: 260;
-   grid-row-start: 35; 
- }
- }
- 
- @media screen and (max-width: 400px) { 
- #photography{
-  grid-column-start: 250;
-  grid-column-end: 290;
-  grid-row-start: 35;
-  grid-row-end: 35; 
- }
- }
- 
- #gallery-title {
-  display: flex; 
-  flex-wrap: wrap; 
-  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-  text-transform: uppercase;
-   color: #F1ECD4;
-   font-size: 20px;  
-   margin-left: 50px;  
- }
+@media screen and (max-width: 1000px) and (min-width: 800px) { 
+      
+  * {
+    max-height: 50em; 
+  }
   
-#lightgallery {
-  list-style-type: none; 
-  display: flex; 
-  flex-direction: row;
-  flex-wrap: wrap; 
-  justify-content: space-around; 
-  margin: 0px 50px 0px 50px; 
- } 
- 
- .gallery-images-photography {
-  border-radius: 5px; 
-  display: flex;
-  justify-content: center; 
-  border: solid #FFD195 2px;
-  margin: 5px; 
-  height: 200px;
-  width: 200px; 
- }
+     .open-overlay { 
+    position: absolute;
+    right: 4.2rem;
+    top: 2rem;
+    width: 34px;
+    height: 25px; 
+  }
+    
+   .nav-text {
+    font-size: 13px; 
+    width: 70px; 
+  }
+    
+   .whole-header { 
+      height: 60em;
+      background-image:url('/img/corner-lines-whole.png');
+      background-size: cover;
+    }
+  
+  #header-subtitle  {
+    font-size: 20px; 
+    position: relative;
+    top: 10px; 
+    right: 5px;
+  }
+  
+  #header-title {   
+    font-size: 36px;
+    position: relative;
+    right: 50px;
+    top: 0px; 
+  }   
 
- .gallery-images-s-w {
-  border-radius: 5px; 
+  .subject-select {
+   width: 100%;
+   margin-right: 30px; 
    display: flex;
-   justify-content: center; 
-   border: solid #FFD195 2px;
-   margin: 5px; 
-   height: 200px;
-   width: 200px; 
+   flex-direction: row; 
+   justify-content: flex-end;
+   align-items: flex-start;
+   margin-top: -20.2em; 
+
+   animation: slideInRight 2s;
+}
+
+ .circles {
+   height: 170px; 
+   width: 170px; 
  }
 
- .gallery-images-d-d {
-  border-radius: 5px; 
-  display: flex;
-  justify-content: center; 
-  border: solid #FFD195 2px;
-  margin: 5px; 
-  height: 200px;
-  width: 200px;
- }
+.subject-text{
+ text-transform: uppercase;
+ text-decoration: none;
+ color: black;
+ font-size: 14px;
 
- .gallery-subject {
-   text-align: center;
-   text-decoration: none; 
-   color: #F1ECD4;
-   font-size: 15px; 
- }
- 
- .gallery-subject {
-  font-family: "cinzel-bold", Arial, Helvetica, sans-serif; 
-   display: flex; 
-   justify-content: center;
-   align-items: center;
-   padding: 30px; 
- }
-
-/* digital design images */
-
-#image-1-d-d { 
-   margin: 5px; 
-   background-image:url('/img/space-guy.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
 }
 
-#image-2-d-d {
-   margin: 5px; 
-   background-image:url('/img/jelly-fish-finish.png');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover; 
+#designs-title{
+ position: relative;
+ left: 5.3em;
+ top: 9.5em;
 }
 
-#image-3-d-d {
-  margin: 5px; 
-  background-image:url('/img/sl-logo.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
+#documents-title{
+ position: relative;
+ left: 4.3em;
+ top: 9.5em;
 }
 
-#image-4-d-d {
-  margin: 5px; 
-  background-image:url('/img/tcom-305-poster.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
+#photography-title{
+ position: relative;
+ left: 3.5em;
+ top: 9.5em;
 }
 
-/* photography images */ 
-
-#image-1-photography {
-  margin: 5px; 
-  background-image:url('/img/daisy.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
+.social-media {
+ width: 100%;
+ margin-right: 2.5em; 
+ display: flex;
+ flex-direction: row; 
+ justify-content: flex-end;
+ align-items: flex-start;
+ margin-top: -13em; 
 }
 
-#image-2-photography {
-  margin: 5px; 
-  background-image:url('/img/rotc.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
+.social-media-options {
+ display: flex; 
+ justify-content: flex-start; 
+ height: 40px; 
+ width: 40px; 
+ padding: 20px;
+
+}
 }
 
-#image-3-photography {
-  margin: 5px; 
-  background-image:url('/img/warm-weather.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
+/* 
+   header & body media query between 1000px 
+   */ 
 
-#image-4-photography {
-  margin: 5px; 
-  background-image:url('/img/tennis-net.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
+
+   @media screen and (max-width: 800px) and (min-width: 600px) { 
+      
+    * {
+      max-height: 50em; 
+    }
+    
+       .open-overlay { 
+      position: absolute;
+      right: 4.2rem;
+      top: 2rem;
+      width: 34px;
+      height: 25px; 
+    }
+      
+     .nav-text {
+      font-size: 13px; 
+      width: 70px; 
+    }
+      
+     .whole-header { 
+        height: 60em;
+        background-image:url('/img/corner-lines-whole.png');
+        background-size: cover;
+      }
+    
+    #header-subtitle  {
+      font-size: 18px; 
+      position: relative;
+     top: 30px; 
+      left: 40px;
+    }
+    
+    #header-title {   
+      font-size: 24px;
+      position: relative;
+      top: 10px; 
+      right: 20px;
+    }   
+  
+    .subject-select {
+     width: 100%;
+     margin-right: 30px; 
+     display: flex;
+     flex-direction: row; 
+     justify-content: flex-end;
+     align-items: flex-start;
+     margin-top: -20.2em; 
+  
+     animation: slideInRight 2s;
+  }
+  
+   .circles {
+     height: 120px; 
+     width: 120px; 
+     margin-top: 10px;
+   }
+  
+  .subject-text{
+   text-transform: uppercase;
+   text-decoration: none;
+   color: black;
+   font-size: 12px;
+  
+  }
+  
+  #designs-title{
+   position: relative;
+   left: 4.5em;
+   top: 8.3em;
+  }
+  
+  #documents-title{
+   position: relative;
+   left: 3.5em;
+   top: 8.3em;
+  }
+  
+  #photography-title{
+   position: relative;
+   left: 2.5em;
+   top: 8.3em;
+  }
+  
+  .social-media {
+   width: 100%;
+   margin-right: 2.5em; 
+   display: flex;
+   flex-direction: row; 
+   justify-content: flex-end;
+   align-items: flex-start;
+   margin-top: -16.5em; 
+  }
+  }
+   
  
