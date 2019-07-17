@@ -335,7 +335,7 @@ a:hover {
    */ 
 
 
-   @media screen and (max-width: 800px) and (min-width: 600px) { 
+   @media screen and (max-width: 800px) and (min-width: 650px) { 
       
     * {
       max-height: 50em; 
@@ -363,8 +363,8 @@ a:hover {
     #header-subtitle  {
       font-size: 18px; 
       position: relative;
-     top: 30px; 
-      left: 40px;
+      top: 30px; 
+      left: 50px;
     }
     
     #header-title {   
@@ -414,7 +414,7 @@ a:hover {
   
   #photography-title{
    position: relative;
-   left: 2.5em;
+   left: 2.8em;
    top: 8.3em;
   }
   
