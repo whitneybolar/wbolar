@@ -343,7 +343,7 @@ a:hover {
     
        .open-overlay { 
       position: absolute;
-      right: 3rem;
+      right: 4.2rem;
       top: 2rem;
       width: 34px;
       height: 25px; 
@@ -442,7 +442,7 @@ a:hover {
     
        .open-overlay { 
       position: absolute;
-      right: 1.2rem;
+      right: 2.2rem;
       top: 2rem;
       width: 20px;
       height: 20px; 
@@ -473,23 +473,25 @@ a:hover {
     }
       
      .whole-header { 
-        height: 60em;
+      background-image: none; 
+        /* height: 60em;
         background-image:url('/img/corner-lines-whole.png');
-        background-size: cover;
+        background-size: cover; */
       }
     
     #header-subtitle  {
-      font-size: 18px; 
+      font-size: 12px; 
       position: relative;
-      top: 30px; 
-      left: 50px;
+      bottom: 80px; 
+      text-align: center; 
     }
     
     #header-title {   
-      font-size: 24px;
+      font-size: 20px;
       position: relative;
-      top: 10px; 
-      right: 20px;
+      bottom: 100px; 
+      left: 30px;
+      text-align: center; 
     }   
   
     .subject-select {
@@ -505,9 +507,10 @@ a:hover {
   }
   
    .circles {
-     height: 120px; 
-     width: 120px; 
+     height: 60px; 
+     width: 60px; 
      margin-top: 10px;
+     padding: 5px;
    }
   
   .subject-text{
