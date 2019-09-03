@@ -232,7 +232,7 @@ a:hover {
 }
 
  /* 
-contact me media query for 650px and under
+contact me media query for 500px and under
    */   
      
    @media screen and (max-width: 500px) { 
@@ -272,8 +272,8 @@ contact me media query for 650px and under
     text-transform: uppercase; 
     font-size: 6px; 
     position: relative;
-    left: 15px;
-    bottom: 90px; 
+    left: 25px;
+    bottom: 70px; 
     text-align: center;
    }
    
@@ -281,10 +281,10 @@ contact me media query for 650px and under
      color: black;   
      font-family: 'muli-regular', sans-serif;
      text-transform: uppercase; 
-     font-size: 18px;
+     font-size: 16px;
      position: relative;
      left: 25px;
-     bottom: 90px; 
+     bottom: 75px; 
    }
    
    .nav-and-button {
@@ -303,7 +303,7 @@ contact me media query for 650px and under
      display: flex; 
      flex-direction: column;
      align-items: flex-end;
-     margin: 2.1em 20px 0px 29px; 
+     margin: 2.1em 13px 0px 29px; 
      width: 100%;
      text-transform: uppercase; 
    }
@@ -393,7 +393,7 @@ contact me media query for 650px and under
     justify-content: flex-start; 
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 19em; 
+    margin-bottom: 12em; 
     height: 65px; 
     width: 65px; 
     padding: 2px;
