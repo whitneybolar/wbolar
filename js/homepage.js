@@ -23,7 +23,7 @@ $(document).ready(function(){
   $(".overlay-navigation").hide();
 
   $(".open-overlay").click(function(){
-      $(".overlay-navigation").slideToggle();
+      $(".overlay-navigation").animate({'width': 'toggle'});
   });
 });
 

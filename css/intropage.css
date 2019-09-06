@@ -25,7 +25,7 @@ font-face
 */
 
 .whole-header {
-  background-image:url('/img/businesscard-back-gold-white-2.png');
+  background-image:url('/img/businesscard-back-gold-white.jpg');
   background-position: center;
   background-color: white;
   background-repeat: no-repeat;
@@ -36,11 +36,11 @@ font-face
  }
  
  .header-svg-title {
-   height: 100px; 
-   width: 200px; 
+   height: 150px; 
+   width: 250px; 
    position: absolute;
-  right: 2.4rem;
-  top: 1.5rem;
+  right: 3.8rem;
+  top: 2.5rem;
  }
 
  .header-text{
@@ -89,9 +89,10 @@ font-face
  
  .overlay-navigation {
    display: flex; 
-   flex-direction: column;
+   justify-content: flex-end;
+   flex-direction: row;
    align-items: flex-end;
-   margin: 0.8em 25px 0px 29px; 
+   margin: -1em 5.7em 0em 29px; 
    width: 100%;
    text-transform: uppercase; 
  }
@@ -104,16 +105,17 @@ font-face
   display: none;
   font-family: 'muli-regular', sans-serif;
   border: solid black 1px;  
-   height: 5px;
+   height: 4.5px;
    padding: 5px; 
    display: flex; 
    align-items: center;
    justify-content: center;
-   margin: 10px 0px 0px 0px; 
+   margin: 0px 10px 0px 10px; 
    text-decoration: none;
    color: black; 
-    font-size: 8px; 
-    width: 40px; 
+   background-color: white;
+    font-size: 7px; 
+    width: 35px; 
  }
  
   /*
@@ -122,11 +124,11 @@ font-face
  
  .open-overlay { 
   position: absolute;
-  right: 2.4rem;
+  right: 3rem;
   top: 1.5rem;
   width: 15px;
   height: 15px; 
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(255, 255, 255);
    border: solid 1px #2F3135; 
    border-radius: 2px; 
    padding: 4px; 
@@ -180,234 +182,11 @@ font-face
 .circles {
   display: flex; 
   justify-content: flex-start; 
-  margin-top: 2em; 
+  margin-top: 13em; 
   margin-right: 5px; 
-  height: 100px; 
-  width: 100px; 
+  height: 75px; 
+  width: 75px; 
   padding: 10px;
-}
-
-.subject-text{
-text-transform: uppercase;
-text-decoration: none;
-color: black;
-font-size: 10px;
-}
-
-.subject-text:hover {
-color: #C1A04C;
-}
-
-a:hover {
-  color: #C1A04C;
-}
-
-#designs-title{
-  position: relative;
-  left: 3.8em;
-  top: 9.7em;
-}
-
-#documents-title{
-position: relative;
-left: 2.7em;
-top: 9.7em;
-}
-
-#photography-title{
-position: relative;
-left: 2em;
-top: 9.7em;
-}
-
- /*
- DIAGNOSTIC STYLING Section: Social Media Nav
-*/
-
-.social-media {
-width: 100%;
-margin-right: 3em; 
-display: flex;
-flex-direction: row; 
-justify-content: flex-end;
-align-items: flex-start;
-margin-top: -13em; 
-}
-
-.social-media-options {
-display: flex; 
-justify-content: flex-start; 
-height: 20px; 
-width: 20px; 
-padding: 10px;
-}
-
-/* 
-contact me media query for 500px and under
- */   
-   
- @media screen and (max-width: 500px) { 
-
-  * {
-    max-height: 30em;
-   }
-
-/*
-  DIAGNOSTIC STYLING Body & Header
-*/
-
-.whole-header {
-background-image:url('/img/corner-lines-phone-1.png');
-background-size: cover;
-background-repeat: no-repeat;
-height: 60em;
-display: flex;
-flex-wrap: wrap;
-}
- 
- .header-text{
-  color: black; 
-  width: 100%; 
-  border-radius: 10px; 
-  height: 150px; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: flex-end;
-  margin-right: 100px; 
-  margin-bottom: 100px; 
-
- }
- 
- #header-subtitle{
-  font-family: 'muli-regular', sans-serif;
-  text-transform: uppercase; 
-  font-size: 6px; 
-  position: relative;
-  left: 25px;
-  bottom: 70px; 
-  text-align: center;
- }
- 
- #header-title {
-   color: black;   
-   font-family: 'muli-regular', sans-serif;
-   text-transform: uppercase; 
-   font-size: 16px;
-   position: relative;
-   left: 25px;
-   bottom: 75px; 
- }
- 
- .nav-and-button {
-   width: 100%;
-   height: 100px; 
-   display: flex;
-   justify-content: flex-end; 
-   align-items: flex-start; 
- }
- 
- /*
-  DIAGNOSTIC STYLING overlay-navigation (class)
- */
- 
- .overlay-navigation {
-   display: flex; 
-   flex-direction: column;
-   align-items: flex-end;
-   margin: 2.1em 13px 0px 29px; 
-   width: 100%;
-   text-transform: uppercase; 
- }
-
- #nav_item_1 {
-   margin-top: 45px;
- }
- 
- .nav-text {
-  display: none;
-  font-family: 'muli-regular', sans-serif;
-  border: solid black 1px;  
-   height: 5px;
-   padding: 5px; 
-   display: flex; 
-   align-items: center;
-   justify-content: center;
-   margin: 10px 0px 0px 0px; 
-   text-decoration: none;
-   color: black; 
-    font-size: 8px; 
-    width: 40px; 
- }
- 
-  /*
-  DIAGNOSTIC STYLING open-overlay (div)
- */
- 
- .open-overlay { 
-  position: absolute;
-  right: 2.1rem;
-  top: 3rem;
-  width: 15px;
-  height: 15px; 
-  background-color: rgba(255, 255, 255, 0.2);
-   border: solid 1px #2F3135; 
-   border-radius: 2px; 
-   padding: 4px; 
-   display: block;
-   cursor: pointer;
- }
-
- .open-overlay span {
-   display: block;
-   height: 1px;
-   width: 15px; 
-   background-color: #29363B;
-   cursor: pointer;
-   margin-top: 3.5px; 
-   margin-left: 0px; 
- }
-
- /* First Frame all bars */ 
- .bar-top {
-  position: absolute;
-  top: 0px; 
-}
-
-.bar-middle {
-  position: absolute;
-  top: 7.5px;
-}
-
-.bar-bottom {
-  position: absolute;
-  top: 15px;
-}
-  
- /*
- DIAGNOSTIC STYLING Section: Subject Nav
-*/
-
-.subject-select {
-  width: 100%;
-  margin-right: 15px; 
-  display: flex;
-  flex-direction: row; 
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-top: -20.2em; 
-
-  animation: slideInRight 2s;
-}
-
-.circles {
-  display: flex; 
-  justify-content: flex-start; 
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 12em; 
-  height: 65px; 
-  width: 65px; 
-  padding: 2px;
 }
 
 .subject-text{
@@ -427,20 +206,20 @@ a:hover {
 
 #designs-title{
   position: relative;
-  left: 2.7em;
-  top: 10em;
+  left: 4.5em;
+  top: 37.2em;
 }
 
 #documents-title{
 position: relative;
-left: 1.7em;
-top: 10em;
+left: 3.5em;
+top: 37.2em;
 }
 
 #photography-title{
 position: relative;
-left: 1em;
-top: 10em;
+left: 3em;
+top: 37.2em;
 }
 
  /*
@@ -454,7 +233,7 @@ display: flex;
 flex-direction: row; 
 justify-content: flex-end;
 align-items: flex-start;
-margin-top: -13em; 
+margin-top: -10em; 
 }
 
 .social-media-options {
@@ -464,9 +243,4 @@ height: 20px;
 width: 20px; 
 padding: 10px;
 }
-
-
-
- }
-
 
