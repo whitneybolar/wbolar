@@ -25,9 +25,9 @@ font-face
 */
 
 .whole-header {
-  background-image:url('/img/businesscard-back-gold-white.jpg');
+  background-image:url('/img/businesscard-back-gold.png');
   background-position: center;
-  background-color: white;
+  background-color: #51515180;
   background-repeat: no-repeat;
   background-size: cover; 
   height: 590px;
@@ -36,11 +36,11 @@ font-face
  }
  
  .header-svg-title {
-   height: 150px; 
+   height: 350px; 
    width: 250px; 
    position: absolute;
   right: 3.8rem;
-  top: 2.5rem;
+  top: 4rem;
  }
 
  .header-text{
