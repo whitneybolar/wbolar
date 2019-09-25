@@ -125,16 +125,16 @@ font-face
     width: 35px; 
  }
  
-  /*
+ /*
   DIAGNOSTIC STYLING open-overlay (div)
  */
  
  .open-overlay { 
   position: absolute;
   right: 3rem;
-  top: 1.5rem; 
-  width: 15px;
-  height: 15px; 
+  top: 1.65rem;
+  width: 11px;
+  height: 10px; 
   background-color: rgb(255, 255, 255);
    border: solid 1px #2F3135; 
    border-radius: 2px; 
@@ -145,28 +145,31 @@ font-face
 
  .open-overlay span {
    display: block;
-   height: 1px;
-   width: 15px; 
+   height: .5px;
+   width: 10px; 
    background-color: #29363B;
    cursor: pointer;
-   margin-top: 3.5px; 
+   margin-top: .5px; 
    margin-left: 0px; 
  }
 
  /* First Frame all bars */ 
  .bar-top {
   position: absolute;
-  top: 0px; 
+  top: 3px; 
+  margin-top: .5px; 
 }
 
 .bar-middle {
   position: absolute;
-  top: 7.5px;
+  top: 8.5px;
+  margin-top: .5px; 
 }
 
 .bar-bottom {
   position: absolute;
-  top: 15px;
+  top: 14px;
+   margin-top: .5px; 
 }
   
  /*
@@ -253,15 +256,61 @@ padding: 10px;
 
 @media only screen and (max-width: 500px) {
 
-  /*
+  * {
+    max-height: 25em;
+   }
+
+   .header-svg-title-whole {
+    height: 350px; 
+    width: 100%; 
+    display: flexbox;
+    margin-top: -7em; 
+    position: absolute;
+    top: 10rem;
+   }
+
+
+.overlay-navigation {
+  display: flex; 
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: -1em 2em 0em 0px; 
+  width: 100%;
+  text-transform: uppercase; 
+}
+
+#nav_item_1 {
+  margin-top: 45px;
+}
+
+.nav-text {
+ display: none;
+ font-family: 'muli-regular', sans-serif;
+ border: solid black 1px;  
+  height: 4px;
+  padding: 5px; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin: 0px  10px 0px 10px; 
+  text-decoration: none;
+  color: black; 
+  border-radius: 5px; 
+  background-color: rgba(255, 255, 255, 0.5); 
+   font-size: 6px; 
+   width: 25px; 
+}
+
+/*
   DIAGNOSTIC STYLING open-overlay (div)
  */
  
  .open-overlay { 
   position: absolute;
-  right: 3rem;
-  top: 1.5rem;
-  width: 15px;
+  right: 1rem;
+  top: 1.65rem;
+  width: 11px;
   height: 10px; 
   background-color: rgb(255, 255, 255);
    border: solid 1px #2F3135; 
@@ -274,30 +323,63 @@ padding: 10px;
  .open-overlay span {
    display: block;
    height: .5px;
-   width: 8px; 
+   width: 10px; 
    background-color: #29363B;
    cursor: pointer;
    margin-top: .5px; 
    margin-left: 0px; 
  }
 
- /* First Frame all bars */ 
- .bar-top {
-  position: absolute;
-  top: 0px; 
-  margin-top: .5px; 
+   /*
+ DIAGNOSTIC STYLING Section: Subject Nav
+*/
+
+.subject-select {
+  width: 100%;
+  margin-right: 30px; 
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: -20.2em; 
+
+  animation: slideInRight 2s;
 }
 
-.bar-middle {
-  position: absolute;
-  top: 7.5px;
-  margin-top: .5px; 
+
+.circles {
+  display: flex; 
+  justify-content: flex-start; 
+  margin-top: -1em; 
+  margin-right: -2px; 
+  height: 60px; 
+  width: 60px; 
+  padding: 5px;
 }
 
-.bar-bottom {
-  position: absolute;
-  top: 15px;
-   margin-top: .5px; 
+.subject-text{
+text-transform: uppercase;
+text-decoration: none;
+color: black;
+font-size: 6px;
 }
-  
+
+#designs-title{
+  position: relative;
+  left: 3.5em;
+  top: 41em;
+}
+
+#documents-title{
+position: relative;
+left: 3.5em;
+top: 37.2em;
+}
+
+#photography-title{
+position: relative;
+left: 3em;
+top: 37.2em;
+}
+
 }
