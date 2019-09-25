@@ -3,17 +3,7 @@ font-face
 */
 
 @font-face {
-  font-family: "cinzel-black"; src: url("/fonts/cinzel-black.ttf") format("truetype");
-  font-family: "cinzel-bold"; src: url("/fonts/cinzel-bold.ttf") format("truetype");
-  font-family: "cinzel-regular"; src: url("/fonts/cinzel-regular.ttf") format("truetype");
-  font-family: "cinzel-decorative-bold"; src: url("/fonts/cinzel-decorative-bold.ttf") format("truetype");
-  font-family: "cinzel-decorative-regular"; src: url("/fonts/cinzel-decorative-regular.ttf") format("truetype");
-  font-family: "comfortaa-regular"; src: url("/fonts/comfortaa-regular.ttf") format("truetype");
-  font-family: "comfortaa-bold"; src: url("/fonts/comfortaa-bold.ttf") format("truetype");
-  font-family: "comfortaa-light"; src: url("/fonts/comfortaa-light.ttf") format("truetype");
-  font-family: "muli-regular"; src: url("/fonts/muli-regular.ttf") format("truetype");
-  font-family: "muli-bold"; src: url("/fonts/muli-bold.ttf") format("truetype");
-  font-family: "muli-light"; src: url("/fonts/muli-light.ttf") format("truetype");
+  font-family: "frederickatheGreat"; src: url("/fonts/FrederickatheGreat-Regular.ttf") format("truetype");
 }
 
 * {
@@ -26,15 +16,15 @@ font-face
 */
 
 .whole-header {
-  background-image:url('/img/');
+  background-image:url('/img/space-guy-transparent.png');
   background-position: center;
   background-color: #51515180;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: contain; 
   height: 590px;
   display: flex;
   flex-wrap: wrap;
-  border-block-color: white;
+  /* border-block-color: white; */
   border-block-start-width: 3em;
  }
  
@@ -73,7 +63,7 @@ font-face
  
  #header-title {
    color: black;   
-   font-family: 'muli-regular', sans-serif;
+   font-family: 'frederickatheGreat', sans-serif;
    text-transform: uppercase; 
    font-size: 24px;
    position: relative;
