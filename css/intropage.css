@@ -16,17 +16,67 @@ font-face
 */
 
 .whole-header {
-  background-image:url('/img/space-guy-transparent.png');
   background-position: center;
-  background-color: #51515180;
+  background-color:#468077;
   background-repeat: no-repeat;
   background-size: contain; 
-  height: 590px;
+  height: 400px; 
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   /* border-block-color: white; */
   border-block-start-width: 3em;
  }
+
+ #writing-samples:hover {
+  color: #cbb74b; 
+}
+
+.art-navigation {
+  display: flex; 
+  font-family: 'frederickatheGreat', sans-serif;
+}
+
+ #entire-picture {
+  position: absolute;
+  top: 70px;
+  right: 30px; 
+  width: 100vw;
+  height: 400px; 
+ }
+
+ #writing-samples:hover {
+  color: #cbb74b; 
+}
+
+ #writing-samples {
+   display: flex;
+   justify-content: right;
+   font-size: 30px;
+   color: rgb(255, 255, 255); 
+ }
+
+ #designs:hover {
+  color: #cbb74b; 
+}
+
+ #designs {
+  display: flex;
+  justify-content: right;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+#photography:hover {
+  color: #cbb74b; 
+}
+
+#photography {
+  display: flex;
+   justify-content: right;
+  font-size: 30px; 
+  color: rgb(255, 255, 255);
+}
  
  .header-svg-title-whole {
   height: 350px; 
@@ -40,7 +90,7 @@ font-face
  }
 
  .header-text{
-  color: black; 
+  color: white; 
   width: 100%; 
   border-radius: 10px; 
   height: 150px; 
@@ -57,17 +107,17 @@ font-face
   text-transform: uppercase; 
   font-size: 14px; 
   position: relative;
-  left: 40px;
+  left: 800px;
   bottom: 55px; 
  }
  
  #header-title {
-   color: black;   
+   color: white;   
    font-family: 'frederickatheGreat', sans-serif;
    text-transform: uppercase; 
    font-size: 24px;
    position: relative;
-   right: 20px;
+   right: 90px;
    bottom: 35px; 
  }
  
